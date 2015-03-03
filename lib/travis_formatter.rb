@@ -28,9 +28,9 @@ class TravisFormatter < XCPretty::Simple
     super
   end
 
-  def format_test_run_finished(name)
-    super
+  def format_test_run_finished(name, time)
     close_fold("Tests-#{scrub(name)}")
+    super
   end
 
   def scrub(text)
