@@ -14,7 +14,7 @@ class TravisFormatter < XCPretty::Simple
   end
 
   def format_build_target(target, project, configuration)
-    open_fold("Build:#{target}")
+    open_fold("Build #{target}")
     super
   end
 
@@ -24,7 +24,7 @@ class TravisFormatter < XCPretty::Simple
   end
 
   def format_test_suite_started(name)
-    open_fold("Tests:#{name}")
+    open_fold("Tests #{name}")
     super
   end
 end
