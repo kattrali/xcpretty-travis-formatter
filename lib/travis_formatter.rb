@@ -5,7 +5,7 @@ class TravisFormatter < XCPretty::Simple
     return EMPTY if text == @open_fold
     close_fold(@open_fold) if @open_fold
     @open_fold = text
-    "travis_fold:start:#{text}\r"
+    "travis_fold:start:#{text}\r\n"
   end
 
   def close_fold(text)
