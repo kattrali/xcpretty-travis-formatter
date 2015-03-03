@@ -14,18 +14,23 @@ class TravisFormatter < XCPretty::Simple
   end
 
   def format_build_target(target, project, configuration)
-    open_fold("Build #{target}")
+    open_fold("Build-#{scrub(project)}")
     super
   end
 
   def format_clean_target(project, target, configuration)
-    open_fold("Clean Targets")
+    open_fold("Clean")
     super
   end
 
-  def format_test_suite_started(name)
-    open_fold("Tests #{name}")
+  def format_test_run_started(name)
+    run = scrub(name).split(".").first
+    open_fold("Tests-#{run}")
     super
+  end
+
+  def scrub(text)
+    text.gsub(/\s/,"_")
   end
 end
 
