@@ -1,0 +1,11 @@
+language: ruby
+
+install:
+  - bundle install
+
+rvm:
+  - 2.1.1
+  - 1.9.3
+
+script: rake ci
+
