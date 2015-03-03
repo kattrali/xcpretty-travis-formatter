@@ -23,14 +23,9 @@ class TravisFormatter < XCPretty::Simple
     super
   end
 
-  def format_test_run_started(name)
-    open_fold(name)
+  def format_test_suite_started(name)
+    open_fold("Tests:#{name}")
     super
-  end
-
-  def format_test_run_finished(name, time)
-    super
-    close_fold(name)
   end
 end
 
