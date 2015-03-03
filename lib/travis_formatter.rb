@@ -24,13 +24,17 @@ class TravisFormatter < XCPretty::Simple
   end
 
   def format_test_run_started(name)
-    run = scrub(name).split(".").first
-    open_fold("Tests-#{run}")
+    open_fold("Tests-#{scrub(name)}")
     super
   end
 
+  def format_test_run_finished(name)
+    super
+    close_fold("Tests-#{scrub(name)}")
+  end
+
   def scrub(text)
-    text.gsub(/\s/,"_")
+    text.gsub(/\s/,"_").split(".").first
   end
 end
 
