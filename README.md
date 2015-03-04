@@ -1,6 +1,6 @@
 # XCPretty TravisCI Formatter
 
-Custom formatter for [xcpretty](https://github.com/supermarin/xcpretty) with some syntactic sugar for presentation on TravisCI.
+Custom formatter for [xcpretty](https://github.com/supermarin/xcpretty) with some syntactic sugar for presentation on TravisCI. [Here is some sample output](https://travis-ci.org/kattrali/xcpretty-travis-formatter/jobs/52970340). The "Build", "Clean", and test phase sections are folded separately, though the final completion message and failing tests are presented clearly, for faster scanning.
 
 ## Installation
 
