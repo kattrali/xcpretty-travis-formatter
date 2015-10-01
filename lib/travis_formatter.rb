@@ -18,7 +18,12 @@ class TravisFormatter < XCPretty::Simple
     super
   end
 
-  def format_clean_target(project, target, configuration)
+  def format_analyze_target(target, project, configuration)
+    open_fold("Analyze")
+    super
+  end
+
+  def format_clean_target(target, project, configuration)
     open_fold("Clean")
     super
   end
