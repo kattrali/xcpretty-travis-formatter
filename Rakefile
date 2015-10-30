@@ -4,5 +4,5 @@ task :spec do
 end
 
 task :ci do
-  sh 'cat spec/fixtures/xcodebuild.log | xcpretty -c -f `bin/xcpretty-travis-formatter`'
+  sh 'cat spec/fixtures/xcodebuild.log | xcpretty -f `bin/xcpretty-travis-formatter`'
 end
