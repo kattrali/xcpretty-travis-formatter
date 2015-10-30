@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "xcpretty-travis-formatter"
-  spec.version       = "0.0.3"
+  spec.version       = "0.0.4"
   spec.authors       = ["Delisa Mason"]
   spec.email         = ["iskanamagus@gmail.com"]
   spec.description   =
@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{xcpretty custom formatter for TravisCI}
   spec.homepage      = "https://github.com/kattrali/xcpretty-travis-formatter"
   spec.license       = "MIT"
+  spec.required_ruby_version = "~> 2.0"
   spec.files         = [
   	"README.md",
   	"LICENSE",
