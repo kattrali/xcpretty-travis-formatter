@@ -71,6 +71,7 @@ class TravisFormatter < XCPretty::Simple
   def format_clean_remove;                                                  open_fold("Clean"); super; end
 
   # Compile.
+  def format_build_target(target, project, configuration);                  open_fold("Compile"); super; end
   def format_compile(file_name, file_path);                                 open_fold("Compile"); super; end
 
   # Test.
