@@ -1,3 +1,11 @@
+# 1.0.0
+
+## Enhancements
+
+* Major refactor to account for changes to travis and xcodebuild
+  [Mark Carver](https://github.com/markcarver)
+  [#5](https://github.com/kattrali/xcpretty-travis-formatter/pull/5)
+
 # 0.0.4 - 29 Oct 2015
 
 * Update to xcpretty  0.2, drop support for Ruby 1.9
