@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{xcpretty custom formatter for TravisCI}
   spec.homepage      = "https://github.com/kattrali/xcpretty-travis-formatter"
   spec.license       = "MIT"
-  spec.required_ruby_version = "~> 2.0"
+  spec.required_ruby_version = ">= 2.0"
   spec.files         = [
   	"README.md",
   	"LICENSE",
