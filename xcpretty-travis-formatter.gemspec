@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "xcpretty-travis-formatter"
-  spec.version       = "1.0.0"
+  spec.version       = "1.0.1"
   spec.authors       = ["Delisa Mason"]
   spec.email         = ["iskanamagus@gmail.com"]
   spec.description   =

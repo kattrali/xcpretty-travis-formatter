@@ -1,3 +1,9 @@
+# 1.0.1
+
+* Support running on Ruby 3
+  [Seeker](https://github.com/SeekingMeaning)
+  [#7](https://github.com/kattrali/xcpretty-travis-formatter/pull/7)
+
 # 1.0.0
 
 ## Enhancements
