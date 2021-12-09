@@ -15,14 +15,14 @@ class TravisFormatter < XCPretty::Simple
       # Print out any warnings.
       if !@warnings.compact.empty?
         open_fold("Warnings")
-        STDOUT.puts @warnings.compact.join("\n")
+        STDOUT.puts @warnings.compact.uniq.join("\n")
         close_fold()
       end
 
       # Print out any errors.
       if !@errors.compact.empty?
         open_fold("Errors")
-        STDOUT.puts @errors.compact.join("\n")
+        STDOUT.puts @errors.compact.uniq.join("\n")
         exit(1)
       end
     end
